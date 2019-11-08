@@ -1,5 +1,5 @@
 #!/usr/bin/bash
 make
 sudo make install
-cp .dwm/ ~/
-chmod +x ~/.dwm/
+cp -r .dwm/ ~/
+chmod +x ~/.dwm/*
