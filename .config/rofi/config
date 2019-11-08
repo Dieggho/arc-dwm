@@ -9,5 +9,5 @@ rofi.yoffset: 19
 rofi.lines: 13
 
 
-rofi.theme: ~/.config/rofi/Arc-Dark.rasi
+rofi.theme: /home/void/.config/rofi/Arc-Dark.rasi
 rofi.columns: 2
