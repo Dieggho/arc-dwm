@@ -1,0 +1,8 @@
+#!/bin/bash
+st 			\
+-c SmartTerm		\
+-n Smart-Terminal	\
+-t Shred-Document	\
+-e shred		\
+-uv			\
+"$@"
