@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Dwm
 Comment=Dynamic tiling window manager
-Icon=/usr/share/pixmaps/dwm.png
+Icon=dwm
 Exec=dwm
 TryExec=dwm
 Type=Application
