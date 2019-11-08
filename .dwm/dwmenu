@@ -9,4 +9,5 @@ rofi                                               \
 -show-icons                                 \
 -me-accept-entry MousePrimary  \
 -me-select-entry MouseDPrimary  \
--display-drun Search
+-display-drun Search                   \
+-theme ~/.dwm/Arc-Dark.rasi
