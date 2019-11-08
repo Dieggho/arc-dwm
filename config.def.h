@@ -8,8 +8,6 @@ static const unsigned int borderpx  = 3;        /* border pixel of windows */
 static const unsigned int snap      = 16;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-//static const Bool viewontag         = True;     /* Switch view on tag switch */
-//static const unsigned int gappx     = 6;        /* gap pixel between windows */
 static const char buttonbar[]       = "        ";
 static const char *fonts[]          = { "Sans:size=8" };
 static const char dmenufont[]       = "Sans:size=10";
