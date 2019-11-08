@@ -27,6 +27,7 @@ sudo pacman -S feh --noconfirm --needed
 sudo pacman -S lxtask --noconfirm --needed
 sudo pacman -S rofi --noconfirm --needed
 sudo pacman -S slock --noconfirm --needed
+sudo pacman -S nitrogen --noconfirm --needed
 sudo pacman -S rox --noconfirm --needed
 sudo pacman -S udiskie --noconfirm --needed
 sudo pacman -S xorg-xprop --noconfirm --needed
