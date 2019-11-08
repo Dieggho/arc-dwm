@@ -1,0 +1,15 @@
+--- dwm.c	Tue Oct 02 16:26:04 2012 +0200
++++ dwm.c	Sun Jul 08 09:45:53 2012 +0200
+@@ -1460,12 +1459,6 @@
+ }
+ 
+ void
+-runAutostart(void) {
+-	system("cd ~/.dwm; ./autostart_blocking.sh");
+-	system("cd ~/.dwm; ./autostart.sh &");
+-}
+-
+-void
+ scan(void) {
+ 	unsigned int i, num;
+ 	Window d1, d2, *wins = NULL;
