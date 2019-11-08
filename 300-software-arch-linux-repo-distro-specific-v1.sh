@@ -22,9 +22,17 @@ echo "DESKTOP SPECIFIC APPLICATIONS"
 
 sudo pacman -S arandr --noconfirm --needed
 sudo pacman -S dmenu  --noconfirm --needed
+sudo pacman -S dunst --noconfirm --needed
 sudo pacman -S feh --noconfirm --needed
+sudo pacman -S lxtask --noconfirm --needed
+sudo pacman -S rofi --noconfirm --needed
 sudo pacman -S slock --noconfirm --needed
 sudo pacman -S rox --noconfirm --needed
+sudo pacman -S udiskie --noconfirm --needed
+sudo pacman -S xorg-xprop --noconfirm --needed
+sudo pacman -S xorg-xset --noconfirm --needed
+sudo pacman -S xorg-xsetroot --noconfirm --needed
+
 
 echo "################################################################"
 echo "####    Software from Arch Linux Repository installed     ######"
