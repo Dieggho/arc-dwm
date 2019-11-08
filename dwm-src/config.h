@@ -98,14 +98,14 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0";               /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] =              { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
-static const char *termcmd[] =               { "terminal", NULL }; /* change me to any terminal you want */
+static const char *termcmd[] =               { "st", NULL }; /* change me to any terminal you want */
 static const char *ffox[]  =                 { "firefox", NULL };
 static const char *file[]  =                 { "rox", NULL };
 static const char *deadbeef[]  =             { "deadbeef", NULL };
 static const char *telegram[]  =             { "/opt/Telegram/Telegram", NULL };
 static const char *morc[] =                  { "~/.dwm/dwmenu", NULL };
 static const char *sessmgr[] =               { "~/.dwm/Session-manager", NULL }; 
-static const char *nwmgr[] =                 { "st-arc", "-t", "Connman", "-e", "connmanctl", NULL };
+static const char *nwmgr[] =                 { "st", "-t", "Connman", "-e", "connmanctl", NULL };
 static const char *sterm[] =                 { "smart-terminal", NULL }; /* if you set a terminal with a class "SmartTerm" dwm with treat as a foating window */
 //static const char *vup[] =                  { "pactl", "set-sink-volume", "0", "+5%", NULL }; /* use it with Pulseaudio */
 //static const char *vdown[] =                { "pactl", "set-sink-volume", "0", "-5%", NULL }; /* use it with Pulseaudio */
@@ -123,7 +123,7 @@ static const char *reboot[] =                { "systemctl", "reboot", NULL };
 static const char *python[] =                { "python-shell", NULL };
 static const char *aft[] =                   { "simple-mtpfs", "~/mtpAndroid/", "-o", "allow_other", NULL };
 static const char *task[] =                  { "lxtask", NULL };
-static const char *rooterm[] =               { "root-terminal", NULL };
+static const char *rooterm[] =               { "st", "sudo", "bash", NULL };
 
 
 static Key keys[] = {
