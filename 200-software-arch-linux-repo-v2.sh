@@ -87,7 +87,7 @@ sudo pacman -S --noconfirm --needed epdfview
 
 echo "Installing category Other"
 
-#sudo pacman -S --noconfirm --needed
+sudo pacman -S --noconfirm --needed rox
 
 echo "Installing category System"
 
@@ -128,8 +128,8 @@ sudo pacman -S --noconfirm --needed git
 #sudo pacman -S --noconfirm --needed sane
 sudo pacman -S --noconfirm --needed screenfetch
 sudo pacman -S --noconfirm --needed scrot
-sudo pacman -S --noconfirm --needed simple-scan
-sudo pacman -S --noconfirm --needed sysstat
+#sudo pacman -S --noconfirm --needed simple-scan
+#sudo pacman -S --noconfirm --needed sysstat
 #sudo pacman -S --noconfirm --needed terminator
 #sudo pacman -S --noconfirm --needed termite
 #sudo pacman -S --noconfirm --needed thunar
