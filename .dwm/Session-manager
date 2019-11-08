@@ -1,0 +1,34 @@
+#!/bin/bash
+
+OPTIONS="\
+ Logoff\n\
+  Suspend system\n\
+ Reboot system\n\
+ Power-off system"
+
+LAUNCHER="rofi -hide-scrollbar -width 13 -lines 4 -dmenu -i -p Session-Manager"
+
+
+option=`echo -e $OPTIONS | $LAUNCHER | awk '{print $1}' | tr -d '\r\n'`
+if [ ${#option} -gt 0 ]
+then
+    case $option in
+      Exit)
+        eval $1
+        ;;
+             )
+        pkill dwm
+        ;;
+            )
+        slock systemctl suspend -i
+        ;;
+            )
+        systemctl reboot
+        ;;
+            )
+        systemctl poweroff
+        ;;
+      *)
+        ;;
+    esac
+fi
