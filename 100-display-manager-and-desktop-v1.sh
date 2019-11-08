@@ -32,16 +32,18 @@ sudo systemctl set-default graphical.target
 
 echo "Installing dwm"
 make -C dwm-src/
+make -C st-src/
+make -C slstatus/
 sudo make install -C dwm-src/
+sudo make install -C st-src/
+sudo make install -C slstatus/
 sudo mv dwm.desktop /usr/share/xsessions/
+cp st-src/st.desktop ~/.local/share/applications/
+cp -r .config/ ~/
+cp -r .icons/ ~/
 cp -r .dwm/ ~/
 chmod +x ~/.dwm/*
 
-make -C st-src/
-make -C slstatus/
-sudo make install -C st-src/
-sudo make install -C slstatus/
-cp st-src/st.desktop ~/.local/share/applications/
 
 echo "################################################################"
 echo "####        Dwm has been successfully installed        ####"
