@@ -41,7 +41,6 @@ static const Rule rules[] = {
 	{ "Terminal",     		NULL,       NULL,       1 << 4,       1,             0,           -1 },
 	{ "root-terminal",     		NULL,       NULL,       1 << 4,       1,             0,           -1 },
 	{ "sqlmap-shell",     		NULL,       NULL,       1 << 4,       1,             0,           -1 },
-	{ "st-256color",     		NULL,       NULL,       0 << 0,       1,             1,           -1 },
 	{ "SimpleScreenRecorder",  	NULL,       NULL,       1 << 6,       1,             1,           -1 },
 	{ "Telegram",  			NULL,       NULL,       1 << 0,       1,             0,           -1 },
 	{ "deadbeef",  			NULL,       NULL,       1 << 0,       1,             0,           -1 },
