@@ -24,6 +24,7 @@ sudo pacman -S arandr --noconfirm --needed
 sudo pacman -S dmenu  --noconfirm --needed
 sudo pacman -S feh --noconfirm --needed
 sudo pacman -S slock --noconfirm --needed
+sudo pacman -S rox --noconfirm --needed
 
 echo "################################################################"
 echo "####    Software from Arch Linux Repository installed     ######"
