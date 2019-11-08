@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<panel side="Bottom">
+  <options style="1" width="38" avoid="0" xinerama="0" monitor="0"/>
+  <start>
+    <icon label="Home">~</icon>
+  </start>
+  <end/>
+</panel>
