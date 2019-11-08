@@ -17,7 +17,7 @@ echo "####        Fonts from Arch Linux repo have been uninstalled        ####"
 echo "################################################################"
 
 echo "Uninstalling Dependencies from Arch Linux repo"
-sudo pacman -R gsimplecaln rofi xorg-xprop xorg-xset xorg-xsetroot --noconfirm --needed
+sudo pacman -R dmenu gsimplecaln rofi xorg-xprop xorg-xset xorg-xsetroot --noconfirm --needed
 
 echo "################################################################"
 echo "####        Dependencies from Arch Linux repo have been uinstalled        ####"
