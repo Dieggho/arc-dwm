@@ -7,7 +7,7 @@ pkill udiskie
 pkill slstatus
 
 
-/home/$USER/.fehbg &
+nitrogen --restore &
 xset -dpms s off &
 udiskie &
 slstatus &
