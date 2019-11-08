@@ -1,0 +1,12 @@
+#!/usr/bin/bash
+rofi 				\
+-show drun 			\
+-location 1 			\
+-lines 13 			\
+-width 460 			\
+-yoffset 19 			\
+-columns 2 			\
+-show-icons 			\
+-me-accept-entry MousePrimary 	\
+-me-select-entry MouseDPrimary 	\
+-display-drun Search
