@@ -6,7 +6,7 @@ OPTIONS="\
  Reboot system\n\
  Power-off system"
 
-LAUNCHER="rofi -hide-scrollbar -width 13 -lines 4 -dmenu -i -p Session-Manager"
+LAUNCHER="rofi -hide-scrollbar -location 1 -yoffset 19 -me-accept-entry MousePrimary -me-select-entry MouseDPrimary -width 13 -lines 4 -theme ~/.dwm/Arc-Dark.rasi -dmenu -i -p Session-Manager"
 
 
 option=`echo -e $OPTIONS | $LAUNCHER | awk '{print $1}' | tr -d '\r\n'`
