@@ -97,14 +97,14 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0";               /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] =              { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
-static const char *termcmd[] =               { "st", NULL }; /* change me to any terminal you want */
+static const char *termcmd[] =               { "terminal", NULL }; /* change me to any terminal you want */
 static const char *ffox[]  =                 { "firefox", NULL };
 static const char *file[]  =                 { "rox", NULL };
 static const char *deadbeef[]  =             { "deadbeef", NULL };
 static const char *telegram[]  =             { "/opt/Telegram/Telegram", NULL };
 static const char *morc[] =                  { "~/.dwm/dwmenu", NULL };
 static const char *sessmgr[] =               { "~/.dwm/Session-manager", NULL }; 
-static const char *nwmgr[] =                 { "st", "-t", "Connman", "-e", "connmanctl", NULL };
+static const char *nwmgr[] =                 { "st-arc", "-t", "Connman", "-e", "connmanctl", NULL };
 static const char *sterm[] =                 { "smart-terminal", NULL }; /* if you set a terminal with a class "SmartTerm" dwm with treat as a foating window */
 //static const char *vup[] =                  { "pactl", "set-sink-volume", "0", "+5%", NULL }; /* use it with Pulseaudio */
 //static const char *vdown[] =                { "pactl", "set-sink-volume", "0", "-5%", NULL }; /* use it with Pulseaudio */
@@ -116,13 +116,13 @@ static const char *gcal[] =                  { "gsimplecal", NULL };
 static const char *scrsht[] =                { "screenshot", NULL };
 static const char *smart[] =                 { "smart-terminal", NULL };
 static const char *leafpad[] =               { "leafpad", NULL };
-static const char *wpaper[] =                { "wallpaper", NULL };
+static const char *wpaper[] =                { "nitrogen", NULL };
 static const char *susp[] =                  { "slock", "systemctl", "suspend", "-i", NULL };
 static const char *reboot[] =                { "systemctl", "reboot", NULL };
 static const char *python[] =                { "python-shell", NULL };
 static const char *aft[] =                   { "simple-mtpfs", "~/mtpAndroid/", "-o", "allow_other", NULL };
 static const char *task[] =                  { "lxtask", NULL };
-static const char *rooterm[] =               { "st", "sudo", "bash", NULL };
+static const char *rooterm[] =               { "root-terminal", NULL };
 
 
 static Key keys[] = {
@@ -142,8 +142,6 @@ static Key keys[] = {
         { Mod5Mask,                     XK_n,      spawn,          {.v = nwmgr} },
         { Mod5Mask,                     XK_F9,     spawn,          {.v = susp} },
         { Mod5Mask,                     XK_F5,     spawn,          {.v = reboot} },
-	{ MODKEY,             		XK_w,      spawn,          {.v = wpaper } },
-	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ Mod5Mask|ShiftMask,           XK_Down,   pushdown,       {0} },
     	{ Mod5Mask|ShiftMask,           XK_Up,     pushup,         {0} },
 	{ Mod5Mask,                     XK_Down,   focusstack,     {.i = +1 } },
@@ -154,6 +152,9 @@ static Key keys[] = {
 	{ Mod5Mask,                     XK_Left,   setmfact,       {.f = -0.05} },
         { Mod5Mask,                     XK_space,  togglefloating, {0} },
 	{ Mod5Mask,                     XK_k,      killclient,     {0} },
+	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
+	{ MODKEY,             		XK_w,      spawn,          {.v = wpaper } },
+	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
         { MODKEY,                       XK_Tab,    view,           {0} },
 	{ MODKEY,                       XK_c,      killclient,     {0} },
