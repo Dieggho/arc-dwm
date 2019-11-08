@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Name=ST
+Type=Application
+GenericName=Arc themed Simple Terminal
+Terminal=false
+Exec=st
+Icon=utilities-terminal
+Categories=ConsoleOnly;System;
+Keywords=system
+OnlyShowIn=dwm
