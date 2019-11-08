@@ -85,9 +85,9 @@ echo "Installing category Office"
 #sudo pacman -S --noconfirm --needed libreoffice-fresh
 sudo pacman -S --noconfirm --needed epdfview
 
-echo "Installing category Other"
+#echo "Installing category Other"
 
-sudo pacman -S --noconfirm --needed rox
+#sudo pacman -S --noconfirm --needed 
 
 echo "Installing category System"
 
