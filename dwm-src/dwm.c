@@ -19,7 +19,7 @@
  * Keys and tagging rules are organized as arrays and defined in config.h.
  *
  * To understand everything else, start reading main().
- * bh = drw->fonts->h + 6; /* THIS LINE CHANGES SPACE AROUND FONT */
+ * bh = drw->fonts->h + 6; THIS LINE CHANGES SPACE AROUND FONT
  */
 #include <errno.h>
 #include <locale.h>
