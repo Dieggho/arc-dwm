@@ -19,6 +19,7 @@
  * Keys and tagging rules are organized as arrays and defined in config.h.
  *
  * To understand everything else, start reading main().
+ * bh = drw->fonts->h + 6; /* THIS LINE CHANGES SPACE AROUND FONT */
  */
 #include <errno.h>
 #include <locale.h>
@@ -1613,7 +1614,7 @@ setup(void)
 	if (!drw_fontset_create(drw, fonts, LENGTH(fonts)))
 		die("no fonts could be loaded.");
 	lrpad = drw->fonts->h;
-	bh = drw->fonts->h + 6;
+	bh = drw->fonts->h + 6; /* THIS LINE CHANGES SPACE AROUND FONT */
 	updategeom();
 	/* init atoms */
 	utf8string = XInternAtom(dpy, "UTF8_STRING", False);
