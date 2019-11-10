@@ -63,6 +63,7 @@ static const Rule rules[] = {
 	{ "aft-linux-qt",  		NULL,       NULL,       1 << 6,       1,             1,           -1 },
 	{ "Pavucontrol",	        NULL,       NULL,       0 << 0,       1,             1,           -1 },
         { "SmartTerm",                  NULL,       NULL,       0 << 0,       1,             1,           -1 },
+	{ "ROX-Filer",                  NULL,       NULL,       0 << 0,       1,             0,           -1 },
 };
 
 /* layout(s) */
